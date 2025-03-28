@@ -28,12 +28,71 @@
     "onCommand:repoManager.showRepoView",
     "onView:repoManagerView"
   ],
-  "contributes": {},
+  "contributes": {
+    "commands": [
+      {
+        "command": "repoManager.showRepoView",
+        "title": "Show Repository Manager",
+        "category": "Repository Manager"
+      },
+      {
+        "command": "repoManager.refreshRepos",
+        "title": "Refresh Repositories",
+        "category": "Repository Manager",
+        "icon": {
+          "light": "resources/light/refresh.svg",
+          "dark": "resources/dark/refresh.svg"
+        }
+      },
+      {
+        "command": "repoManager.addRootFolder",
+        "title": "Add Root Folder",
+        "category": "Repository Manager",
+        "icon": {
+          "light": "resources/light/add-folder.svg",
+          "dark": "resources/dark/add-folder.svg"
+        }
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "repo-manager",
+          "title": "Repository Manager",
+          "icon": "resources/repo-manager.svg"
+        }
+      ]
+    },
+    "views": {
+      "repo-manager": [
+        {
+          "id": "repoManagerView",
+          "name": "Repositories"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "repoManager.refreshRepos",
+          "when": "view == repoManagerView",
+          "group": "navigation"
+        },
+        {
+          "command": "repoManager.addRootFolder",
+          "when": "view == repoManagerView",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "docs": "jsdoc -c jsdoc.json"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vscode": "^1.1.37"
+  },
   "devDependencies": {
     "eslint": "^8.40.0",
     "eslint-config-airbnb-base": "^15.0.0",
