@@ -4,16 +4,16 @@
 
 ## 1. 專案初始化與設置
 
-- [ ] 初始化 VSCode 擴展項目結構
-- [ ] 設置 ESM (ECMAScript Modules) 模塊系統
-- [ ] 配置 ESLint 與 Airbnb-base 規則集
-- [ ] 配置 Prettier 格式化工具
-- [ ] 設置 JSDoc 文檔結構
-- [ ] 配置 Jest 測試環境
-- [ ] 創建基本的 package.json 文件
-- [ ] 設置 Git 版本控制並創建初始提交
-- [ ] 建立擴展激活機制
-- [ ] 設置 VSCode 扩展清單（package.json 中的 contributes 部分）
+- [x] 初始化 VSCode 擴展項目結構
+- [x] 設置 ESM (ECMAScript Modules) 模塊系統
+- [x] 配置 ESLint 與 Airbnb-base 規則集
+- [x] 配置 Prettier 格式化工具
+- [x] 設置 JSDoc 文檔結構
+- [x] 配置 Jest 測試環境
+- [x] 創建基本的 package.json 文件
+- [x] 設置 Git 版本控制並創建初始提交
+- [x] 建立擴展激活機制
+- [x] 設置 VSCode 扩展清單（package.json 中的 contributes 部分）
 
 ## 2. 核心功能實現
 
