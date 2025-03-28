@@ -1,0 +1,22 @@
+{
+  "name": "vscode-repo-manager",
+  "displayName": "Repository Manager",
+  "description": "A VSCode extension to manage multiple Git repositories",
+  "version": "0.0.1",
+  "publisher": "ohlulu",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "type": "module",
+  "main": "./src/extension.js",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "contributes": {},
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
