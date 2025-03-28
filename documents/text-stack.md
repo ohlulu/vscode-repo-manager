@@ -1,0 +1,12 @@
+# Tech stack
+- Language 
+  - JavaScript (不使用 TypeScript)
+- Module System
+  - ESM (ECMAScript Modules)
+- Code Style
+  - ESLint 使用 airbnb-base 規則集
+  - Prettier 配置
+- Documentation
+  - JSDoc
+- Test
+  - Jest
