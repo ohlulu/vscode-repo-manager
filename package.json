@@ -24,7 +24,10 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:repoManager.showRepoView",
+    "onView:repoManagerView"
+  ],
   "contributes": {},
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
